@@ -9,8 +9,9 @@ all:
 	mv $(SOURCE)/$(TARGET).ko $(OUTPUT)
 	mv $(SOURCE)/$(TARGET).o $(OUTPUT)
 	mv $(SOURCE)/$(TARGET).mod.o $(OUTPUT)
-	rm $(SOURCE)/.*
+	rm $(SOURCE)/.*.cmd
 	rm $(SOURCE)/$(TARGET).mod.c
+	rm $(SOURCE)/$(TARGET).mod
 	rm $(PWD)/.*.cmd
 	rm $(PWD)/Module.symvers
 	rm $(PWD)/modules.order
