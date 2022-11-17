@@ -1,0 +1,1 @@
+cmd_/home/galahad/programming_alt/by_language/c/dummy_kernel_module/modules.order := {   echo /home/galahad/programming_alt/by_language/c/dummy_kernel_module/source/hello.ko; :; } | awk '!x[$$0]++' - > /home/galahad/programming_alt/by_language/c/dummy_kernel_module/modules.order

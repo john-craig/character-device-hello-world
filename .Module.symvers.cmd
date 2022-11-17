@@ -1,0 +1,1 @@
+cmd_/home/galahad/programming_alt/by_language/c/dummy_kernel_module/Module.symvers := sed 's/ko$$/o/' /home/galahad/programming_alt/by_language/c/dummy_kernel_module/modules.order | scripts/mod/modpost -m -a   -o /home/galahad/programming_alt/by_language/c/dummy_kernel_module/Module.symvers -e -i Module.symvers   -T -
