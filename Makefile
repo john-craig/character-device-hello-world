@@ -1,4 +1,4 @@
-TARGET :=	hello
+TARGET :=	my-char-dev
 OUTPUT := 	$(PWD)/dist
 SOURCE :=   source
 
@@ -15,3 +15,12 @@ all:
 	rm $(PWD)/.*.cmd
 	rm $(PWD)/Module.symvers
 	rm $(PWD)/modules.order
+
+test:
+	$(shell sh test/test-char-dev.sh)
+
+install: uninstall
+	$(shell sudo insmod $(PWD)/dist/my-char-dev.ko)
+
+uninstall:
+	$(shell sudo rmmod $(PWD)/dist/my-char-dev.ko)
